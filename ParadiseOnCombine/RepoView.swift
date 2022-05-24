@@ -12,7 +12,7 @@ struct RepoView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Repo ID: \(repository.id)")
+            Text("Repository ID: \(repository.id)")
                 .font(.body)
             
             Divider()
