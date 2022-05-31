@@ -30,7 +30,6 @@ jobs:
         run: |
           xcodebuild build \
           -scheme ParadiseOnCombine \
-          -sdk iphonesimulator15.2 \
           -destination "platform=iOS Simulator,name=iPhone 12,OS=15.2" \
           
   test:
