@@ -26,10 +26,10 @@ jobs:
         
       - name: Build
         run: |
-          set -o pipefail
-          xcodebuild build \
+          xcodebuild \
           -scheme ParadiseOnCombine \
           -destination "platform=iOS Simulator,name=iPhone 12,OS=15.2" \
+          build \
   test:
     name: Test Project
     needs: build
