@@ -15,7 +15,18 @@
 		1B908FCE28110C7600DD21AE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B908FCD28110C7600DD21AE /* Repository.swift */; };
 		1B908FD028110F5F00DD21AE /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B908FCF28110F5F00DD21AE /* RepoViewModel.swift */; };
 		1B908FD22811283D00DD21AE /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B908FD12811283D00DD21AE /* RepoView.swift */; };
+		1B962FCA2846D3140059BCD6 /* ParadiseOnCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B962FC92846D3140059BCD6 /* ParadiseOnCombineTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B962FCB2846D3140059BCD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B908FB228110C2000DD21AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B908FB928110C2000DD21AE;
+			remoteInfo = ParadiseOnCombine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B908FBA28110C2000DD21AE /* ParadiseOnCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParadiseOnCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +38,19 @@
 		1B908FCD28110C7600DD21AE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		1B908FCF28110F5F00DD21AE /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 		1B908FD12811283D00DD21AE /* RepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
+		1B962FC72846D3140059BCD6 /* ParadiseOnCombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParadiseOnCombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B962FC92846D3140059BCD6 /* ParadiseOnCombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParadiseOnCombineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1B908FB728110C2000DD21AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B962FC42846D3140059BCD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1B908FBC28110C2000DD21AE /* ParadiseOnCombine */,
+				1B962FC82846D3140059BCD6 /* ParadiseOnCombineTests */,
 				1B908FBB28110C2000DD21AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				1B908FBA28110C2000DD21AE /* ParadiseOnCombine.app */,
+				1B962FC72846D3140059BCD6 /* ParadiseOnCombineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +101,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1B962FC82846D3140059BCD6 /* ParadiseOnCombineTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B962FC92846D3140059BCD6 /* ParadiseOnCombineTests.swift */,
+			);
+			path = ParadiseOnCombineTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +129,24 @@
 			productReference = 1B908FBA28110C2000DD21AE /* ParadiseOnCombine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1B962FC62846D3140059BCD6 /* ParadiseOnCombineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B962FCD2846D3140059BCD6 /* Build configuration list for PBXNativeTarget "ParadiseOnCombineTests" */;
+			buildPhases = (
+				1B962FC32846D3140059BCD6 /* Sources */,
+				1B962FC42846D3140059BCD6 /* Frameworks */,
+				1B962FC52846D3140059BCD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B962FCC2846D3140059BCD6 /* PBXTargetDependency */,
+			);
+			name = ParadiseOnCombineTests;
+			productName = ParadiseOnCombineTests;
+			productReference = 1B962FC72846D3140059BCD6 /* ParadiseOnCombineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +159,10 @@
 				TargetAttributes = {
 					1B908FB928110C2000DD21AE = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					1B962FC62846D3140059BCD6 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 1B908FB928110C2000DD21AE;
 					};
 				};
 			};
@@ -128,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				1B908FB928110C2000DD21AE /* ParadiseOnCombine */,
+				1B962FC62846D3140059BCD6 /* ParadiseOnCombineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +192,13 @@
 			files = (
 				1B908FC528110C2200DD21AE /* Preview Assets.xcassets in Resources */,
 				1B908FC228110C2200DD21AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B962FC52846D3140059BCD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B962FC32846D3140059BCD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B962FCA2846D3140059BCD6 /* ParadiseOnCombineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B962FCC2846D3140059BCD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B908FB928110C2000DD21AE /* ParadiseOnCombine */;
+			targetProxy = 1B962FCB2846D3140059BCD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1B908FC628110C2200DD21AE /* Debug */ = {
@@ -333,6 +409,44 @@
 			};
 			name = Release;
 		};
+		1B962FCE2846D3140059BCD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GYMDP69744;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pazzi.marina.ParadiseOnCombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParadiseOnCombine.app/ParadiseOnCombine";
+			};
+			name = Debug;
+		};
+		1B962FCF2846D3140059BCD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GYMDP69744;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pazzi.marina.ParadiseOnCombineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParadiseOnCombine.app/ParadiseOnCombine";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -350,6 +464,15 @@
 			buildConfigurations = (
 				1B908FC928110C2200DD21AE /* Debug */,
 				1B908FCA28110C2200DD21AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B962FCD2846D3140059BCD6 /* Build configuration list for PBXNativeTarget "ParadiseOnCombineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B962FCE2846D3140059BCD6 /* Debug */,
+				1B962FCF2846D3140059BCD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
