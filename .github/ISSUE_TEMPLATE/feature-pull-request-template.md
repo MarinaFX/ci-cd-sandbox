@@ -1,6 +1,6 @@
 ---
-name: Feature Request
-about: Feature implementation
+name: Feature Pull Request Template
+about: Feature Pull Request implementation
 title: "[Feature] US-TASKID-feature_title"
 labels: feature
 assignees: ''
@@ -24,7 +24,7 @@ assignees: ''
 - In Steps what changes did you do
 - ...
 
-# Evidence 🤩
+# Evidence 🕵️‍♀️
 ## **Screenshots/Videos** 📱
 If applicable, add screenshots to help explain your problem.
 
