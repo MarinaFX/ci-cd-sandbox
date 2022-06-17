@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: |
           xcodebuild build \
-          -scheme ParadiseOnCombine \
+          -scheme ${{ secrets.APP_BUILD_TARGET }} \
           -destination "platform=iOS Simulator,name=iPhone 12,OS=15.2" \
           
   test:
@@ -39,6 +39,6 @@ jobs:
         run: |
           xcodebuild \
           -allowProvisioningUpdates \
-          -scheme ParadiseOnCombine \
+          -scheme ${{ secrets.APP_BUILD_TARGET }} \
           -destination "platform=iOS Simulator,name=iPhone 12,OS=15.2" \
           test \
