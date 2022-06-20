@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+
 struct ParadiseOnCombineApp: App {
     let model = RepoViewModel()
     
