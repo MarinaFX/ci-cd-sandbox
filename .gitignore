@@ -1,6 +1,9 @@
 # Mac
 .DS_Store
 
+# Pods
+Podfile.lock
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
