@@ -16,27 +16,31 @@ struct RepoListView: View {
     }
     
     var body: some View {
-        List(repositories, id: \.self ) { repository in
-            Section(repository.name) {
-                LazyVStack(alignment: .leading) {
-                    RepoView(repository: repository)
-                        .onAppear(perform: fetchRepos)
+        if #available(iOS 15.0, *) {
+            List(repositories, id: \.self ) { repository in
+                Section(repository.name) {
+                    LazyVStack(alignment: .leading) {
+                        RepoView(repository: repository)
+                            .onAppear(perform: fetchRepos)
+                    }
+                }
+                .font(.headline)
+            }
+            .listStyle(.insetGrouped)
+            .onChange(of: self.repoViewModel.repositories, perform: { newValue in
+                self.repositories = newValue
+            })
+            .refreshable {
+                if self.repoViewModel.repoListFull == false {
+                    self.fetchRepos()
                 }
             }
-            .font(.headline)
+            
+            .navigationTitle("Repositories")
+            .navigationBarTitleDisplayMode(.large)
+        } else {
+            // Fallback on earlier versions
         }
-        .listStyle(.insetGrouped)
-        .onChange(of: self.repoViewModel.repositories, perform: { newValue in
-            self.repositories = newValue
-        })
-        .refreshable {
-            if self.repoViewModel.repoListFull == false {
-                self.fetchRepos()
-            }
-        }
-        
-        .navigationTitle("Repositories")
-        .navigationBarTitleDisplayMode(.large)
     }
 }
 
