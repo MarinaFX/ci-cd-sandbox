@@ -4,6 +4,8 @@ name: Pull Request Automerge
 on:
   pull_request:
     types: [opened, reopened, edited, ready_for_review]
+  check_suite: 
+    types: [completed, success]
 
 env:
   PR_URL: ${{github.event.pull_request.html_url}}
