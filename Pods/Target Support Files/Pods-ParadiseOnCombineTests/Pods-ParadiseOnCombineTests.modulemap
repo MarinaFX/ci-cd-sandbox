@@ -1,0 +1,6 @@
+framework module Pods_ParadiseOnCombineTests {
+  umbrella header "Pods-ParadiseOnCombineTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

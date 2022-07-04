@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @EnvironmentObject var repoViewModel: RepoViewModel
+    @StateObject var repoViewModel: RepoViewModel = RepoViewModel()
 
     var body: some View {
             NavigationView {
