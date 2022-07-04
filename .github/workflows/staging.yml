@@ -17,6 +17,17 @@ jobs:
 
       - name: Setup Xcode version
         uses: maxim-lobanov/setup-xcode@v1.4.1
+    
+      - name: Setup CocoaPods
+        uses: actions/cache@v2
+          with:
+            path: Pods
+            key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+            restore-keys: |
+              ${{ runner.os }}-pods-
+              
+      - name: CocoaPod Install
+        run: pod install    
         
       - name: Build
         run: |
